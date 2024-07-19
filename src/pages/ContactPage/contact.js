@@ -3,6 +3,8 @@ import React, { useRef } from "react";
 import NavBar from "../../components/NavBar/NavBar";
 import { send_mail } from "../../utils/images";
 import emailjs from '@emailjs/browser';
+import 'react-toastify/dist/ReactToastify.css'
+import { ToastContainer, toast} from 'react-toastify'
 
 const ContactPage = () =>
 {
@@ -19,6 +21,7 @@ const ContactPage = () =>
           .then(
             () => {
               console.log('SUCCESS!');
+              toast("Your email was sent successfully!")
             },
             (error) => {
               console.log('FAILED...', error.text);
@@ -36,6 +39,7 @@ const ContactPage = () =>
                     <img src={send_mail} alt=" "></img>
                 </div>
                 <div className="right-wrap">
+                    <text className="title">Send me a message!</text>
                     <form ref={form} onSubmit={sendEmail} className="form-wrap">
                         <label>Name</label>
                         <input type="text" name="user_name" className="single-line"/>
@@ -47,6 +51,7 @@ const ContactPage = () =>
                     </form>
                 </div>
             </div>
+            <ToastContainer theme="dark"/>
         </div>
     );
 }

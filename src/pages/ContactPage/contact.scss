@@ -23,9 +23,9 @@
 
         .black-line
         {
-            aspect-ratio: 1 / 18;
-            height: 60vh;
-            width: auto;
+            aspect-ratio: 1 / 13;
+            height: auto;
+            width: 2vw;
             background-color: $clr-darkgray;
         }
     }
@@ -36,11 +36,17 @@
         height: 80vh;
         width: 35%;
 
+        .title
+        {
+            font-weight: 500;
+        }
+
         .form-wrap
         {
             display: flex;
             flex-direction: column;
-            padding-top: 20px;
+            padding-top: 10px;
+            font-size: 20px;
 
             .single-line
             {
