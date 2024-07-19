@@ -1,0 +1,73 @@
+@import "../../App.scss";
+
+.about-wrap
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .left-wrap
+    {
+        height: 40vh;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: end ;
+        padding: 50px;
+
+        .title
+        {
+            margin-top: -200px;
+            font-weight: 600;
+            font-size: 3vw;
+        }
+
+        .copyright
+        {
+            font-size: 15px;
+        }
+    }
+
+    .division-line
+    {
+        height: 500px;
+        width: 10px;
+        margin-top: 50px;
+        background-color: $clr-darkgray;
+    }
+
+    .right-wrap
+    {
+        height: 80vh;
+        width: 49%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+
+        .textbox
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            white-space: pre-line;
+            font-size: 1.2vw;
+
+            .middle-icon
+            {
+                width: fit-content;
+                color: $clr-darkgray;
+                margin-left: 7.5vw;
+                margin-bottom: 20px;
+                filter: drop-shadow(4px 4px 5px rgba(0,0,0,0.4));
+            }
+
+            .arrow-icon
+            {
+                width: fit-content;
+                color: $clr-darkgray;
+                margin-left: 7.5vw;
+            }
+        }
+    }
+}

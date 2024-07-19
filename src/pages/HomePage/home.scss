@@ -1,0 +1,132 @@
+@import "../../App.scss";
+
+.home-wrap
+{
+    display: flex;
+    flex-direction: row;
+
+    .left-wrap
+    {
+        width: 65%;
+        background-color: none;
+        padding: 12vh 0 0 15vw;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+    
+        .greetings
+        {
+            font-size: 1.5vw;
+        }
+    
+        .name
+        {
+            margin-top: 8vh;
+            font-size: 1.7vw;
+        }
+    
+        .typewriter
+        {
+            margin-top: 3.5vh;
+            font-size: 3.2vw;
+        }
+    
+        .desktop
+        {
+            position: absolute;
+            margin-top: 55vh;
+            div
+            {
+                margin-top: 30px;
+                font-size: 15px;
+            }
+        }
+    
+        .mobile
+        {
+            margin-top: 30vh;
+            div
+            {
+                margin-top: 30px;
+                font-size: 1.2vw;
+            }
+        }
+    }
+    
+    .kakao-pop
+    {
+        background-color: $clr-darkgray;
+        width: 300px;
+        height: 300px;
+    
+        .kakao-img
+        {
+            width: inherit;
+        }
+    }
+    
+    .icons
+    {
+        display: flex;
+        flex-direction: row;
+        gap: 0 4rem;
+        
+        a
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $clr-darkgray;
+            filter: drop-shadow(4px 4px 5px rgba(0,0,0,0.4));
+        }
+    
+        .kakao-button
+        {
+            border-style: none;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $clr-darkgray;
+            filter: drop-shadow(4px 4px 5px rgba(0,0,0,0.4));
+            :hover { cursor: pointer; }
+        }
+    }
+    
+    .right-wrap
+    {
+        height: 80vh;
+        width: 35%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: -30px;
+    
+        .portrait
+        {
+            position: absolute;
+            img
+            {
+                width: 25vw;
+            }
+        }
+    
+        .gray-block
+        {
+            height: auto;
+            aspect-ratio: 1/1.7;
+            width: 20vw;
+            background-color: $clr-gray;
+            margin-left: 30%;
+            margin-top: 5%;
+        }
+    }
+    
+    .mobile-portrait
+    {
+        img
+        {
+            width: 25vw;
+        }
+    }
+}

@@ -1,0 +1,166 @@
+@import "../../App.scss";
+
+.resume-wrap
+{
+    display: flex;
+    flex-direction: column;
+
+    .pdf-icon
+    {
+        a
+        {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            margin-top: 50px;
+            margin-left: -30px;
+            text-decoration: none;
+            color: $clr-darkgray;
+
+            text
+            {
+                margin-left: 10px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .subheader
+    {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .profile
+    {
+        padding: 100px 200px;
+
+        .textbox
+        {
+            font-size: 15px;
+            line-height: 30px;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+    }
+
+    .exp
+    {
+        //background-color: $clr-gray;
+        font-size: 20px;
+
+        .subheader{padding-left: 210px; margin-bottom: 30px;}
+
+        .exp-wrap
+        {
+            display: flex;
+            flex-direction: row;
+
+            text{font-size: 15px;}
+
+            .left-wrap
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                justify-content: center;
+                width: 30%;
+            }
+
+            .division-line
+            {
+                height: 80vh;
+                width: 10px;
+                background-color: $clr-darkgray;
+                margin: -20px 20px 0 20px;
+            }
+
+            .right-wrap
+            {
+                display: flex;
+                flex-direction: column;
+                width: fit-content;
+                justify-content: center;
+            }
+
+            .time
+            {
+                margin-bottom: 50px;
+                text{word-spacing: 50px;}
+            }
+
+            .description{margin-bottom: 50px;}
+        }
+    }
+
+    .skills
+    {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        padding-left: 210px;
+        .grid-wrap
+        {
+            margin-top: 10px;
+            padding-left: 20px;
+            display: inline-grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+            grid-auto-flow: column;
+            grid-column-gap: 10vw;
+            font-size: 1.2rem;
+
+            @mixin bar
+            {
+                color: $clr-whitegray;
+                background-color: $clr-darkgray;
+                font-size: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                padding-right: 20px;
+                margin: 5px 0 20px 0;
+                height: 25px;
+            }
+
+            .bar-50
+            {
+                @include bar;
+                width: 250px;
+            }
+            .bar-60
+            {
+                @include bar;
+                width: 300px;
+            }
+            .bar-70
+            {
+                @include bar;
+                width: 350px;
+            }
+            .bar-80
+            {
+                @include bar;
+                width: 400px;
+            }
+            .bar-90
+            {
+                @include bar;
+                width: 450px;
+            }
+        }
+    }
+
+    .interests
+    {
+        margin-left: 210px;
+        margin-bottom: 100px;
+        .textlist
+        {
+            list-style-type: square;
+            font-size: 20px;
+            margin-left: 80px;
+            padding-top: 20px;
+
+            li{margin-bottom: 20px;}
+        }
+    }
+}
